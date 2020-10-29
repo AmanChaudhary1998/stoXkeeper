@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import Navbar from './pages/navigation/Navbar';
+import NavItem from './pages/navigation/NavItem';
+
+import { ReactComponent as CaretIcon } from './icons/caret.svg';
+import DropdownMenu from './pages/navigation/DropdownMenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar>
+      <NavItem  />
+      <NavItem  />
+      <NavItem  />
+      <NavItem icon={< CaretIcon />}>
+
+        <DropdownMenu />
+
+      </NavItem>
+    </Navbar>
+    </>
   );
 }
 
