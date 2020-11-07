@@ -6,6 +6,8 @@ import NavItem from './pages/navigation/NavItem';
 
 import { ReactComponent as CaretIcon } from './icons/caret.svg';
 import DropdownMenu from './pages/navigation/DropdownMenu';
+import CompanyDetails from './components/CompanyDetails/CompanyDetails';
+import ApexChart from './components/Chart/CompanyDetails';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
 
       </NavItem>
     </Navbar>
+    <CompanyDetails />
+    <ApexChart />
     </>
   );
 }
