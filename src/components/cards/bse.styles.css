@@ -1,12 +1,13 @@
 
-.flippy-container *
+.flippy-container 
 {
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 .flippy-cardContainer-wrapper
 {
-	position: relative;
+	
 	height: 100%;
     width: 100%;
 }

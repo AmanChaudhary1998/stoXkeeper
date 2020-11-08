@@ -9,10 +9,10 @@ function App() {
     <div>
       <Router>
       <Navbar />
-      {
-        console.log("aman")
-      }
-        <Route exact path="/CardBSE" render={()=><h1>Hello</h1>}/>
+      <Switch>
+        <Route exact path="/CardBSE" component={CardBSE}/>
+      </Switch>
+      
       </Router>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { Layout, Menu, Breadcrumb } from 'antd';
 
 import 'antd/dist/antd.css';
@@ -36,9 +36,9 @@ class Navbar extends React.Component {
             </Menu.Item>
             <SubMenu key="sub1" icon={<UserOutlined />} title="Market">
               <Menu.Item key="3">
-                <Link to="/CardBSE">
+                <NavLink to="/CardBSE">
                 BSE
-                </Link>
+                </NavLink>
               </Menu.Item>
               <Menu.Item key="4">Nasdaq</Menu.Item>
             </SubMenu>
@@ -56,15 +56,7 @@ class Navbar extends React.Component {
         </Sider>
         <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }} />
-          {/* <Content style={{ margin: '0 16px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>User</Breadcrumb.Item>
-              <Breadcrumb.Item>Bill</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              Bill is a cat.
-            </div>
-          </Content> */}
+        
           <Footer style={{ textAlign: 'center' }}>StoXkeeper ©2020 </Footer>
         </Layout>
       </Layout>

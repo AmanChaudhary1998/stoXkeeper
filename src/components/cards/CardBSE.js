@@ -277,9 +277,8 @@ class CardBSE extends Component{
 
         return(
             <>
-            <h1>Hello</h1>
-                <div className="App">
-                    <div className="col-md-4 col-10 mx-auto" style={{ display: 'flex', flex: '1 0 200px', justifyContent: 'space-around', 'flex-wrap': 'wrap' }}>
+                <div className="">
+                    <div className="" style={{ display: 'flex',width: '80%',marginLeft:'75px', justifyContent: 'space-between', 'flex-wrap': 'wrap'}}>
                         <FlippyOnHover flipDirection="horizontal"/>
                         <FlippyOH flipDirection="horizontal" />
                         <FlippyInfosys flipDirection="horizontal" />
