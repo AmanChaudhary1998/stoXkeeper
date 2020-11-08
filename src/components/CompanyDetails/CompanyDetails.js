@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
+
 import './CompanyDetails.css';
+import Navbar from '../navbar/navbar';
 
 const CompanyDetails = () => {
     const [Data, updateData] = useState({});
@@ -21,6 +24,7 @@ const CompanyDetails = () => {
 
     return(
         <div>
+            {/* <Navbar /> */}
             <div className="CompanyContainer">
                 <div className="CompanyDetails">
                     <h1 className="CompanyHead">Company Name</h1>   
@@ -44,4 +48,4 @@ const CompanyDetails = () => {
     );
 }
 
-export default CompanyDetails;
+export default withRouter(CompanyDetails);

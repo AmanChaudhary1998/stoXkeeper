@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import 'antd/dist/antd.css';
 import './navbar.styles.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
@@ -28,14 +28,14 @@ class Navbar extends React.Component {
     return (
       <Layout style={{ minHeight: '100vh' }}>
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
-          <div className="logo">StoXkeeper</div>
+          <div className="logo"></div>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="2" icon={<DesktopOutlined />}>
               About Us
             </Menu.Item>
             <SubMenu key="sub1" icon={<UserOutlined />} title="Market">
               <Menu.Item key="3">
-                <NavLink to="/Card">
+                <NavLink to="/companyDetails">
                 BSE
                 </NavLink>
               </Menu.Item>
@@ -53,8 +53,8 @@ class Navbar extends React.Component {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }} />
+        {/* <Layout className="site-layout"> */}
+          {/* <Header className="site-layout-background" style={{ padding: 0 }} /> */}
           {/* <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>User</Breadcrumb.Item>
@@ -64,8 +64,8 @@ class Navbar extends React.Component {
               Bill is a cat.
             </div>
           </Content> */}
-          <Footer style={{ textAlign: 'center' }}>StoXkeeper ©2020 </Footer>
-        </Layout>
+          {/* <Footer style={{ textAlign: 'center' }}>StoXkeeper ©2020 </Footer> */}
+        {/* </Layout> */}
       </Layout>
     );
   }

@@ -1,7 +1,7 @@
 .CompanyContainer{
     display: flex;
     background-color: #000000;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* width: 1000px; */
     height: 210px;
     /* border: 1px solid;  */
