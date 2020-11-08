@@ -1,8 +1,7 @@
-import {  Switch } from 'antd';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router,Switch } from 'react-router-dom';
 import './App.css';
 
-import Card from './components/cards/card';
+import CardBSE from './components/cards/CardBSE';
 import Navbar from './components/navbar/navbar';
 
 function App() {
@@ -10,9 +9,10 @@ function App() {
     <div>
       <Router>
       <Navbar />
-      <Switch>
-        <Route exact path="/Card" component={Card}/>
-      </Switch>
+      {
+        console.log("aman")
+      }
+        <Route exact path="/CardBSE" render={()=><h1>Hello</h1>}/>
       </Router>
     </div>
   );

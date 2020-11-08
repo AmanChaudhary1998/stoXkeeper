@@ -1,8 +1,9 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
+import { Layout, Menu, Breadcrumb } from 'antd';
+
 import 'antd/dist/antd.css';
 import './navbar.styles.css';
-import { Layout, Menu, Breadcrumb } from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -35,9 +36,9 @@ class Navbar extends React.Component {
             </Menu.Item>
             <SubMenu key="sub1" icon={<UserOutlined />} title="Market">
               <Menu.Item key="3">
-                <NavLink to="/Card">
+                <Link to="/CardBSE">
                 BSE
-                </NavLink>
+                </Link>
               </Menu.Item>
               <Menu.Item key="4">Nasdaq</Menu.Item>
             </SubMenu>
