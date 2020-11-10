@@ -8,11 +8,11 @@ function App() {
   return (
     <div>
       <Router>
-      <Navbar />
+      <Navbar >
       <Switch>
         <Route exact path="/CardBSE" component={CardBSE}/>
       </Switch>
-      
+      </Navbar>
       </Router>
     </div>
   );

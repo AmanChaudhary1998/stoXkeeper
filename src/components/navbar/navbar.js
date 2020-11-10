@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 
 import 'antd/dist/antd.css';
 import './navbar.styles.css';
@@ -10,6 +10,7 @@ import {
   FileOutlined,
   UserOutlined,
 } from '@ant-design/icons';
+import CardBSE from '../cards/CardBSE';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -56,7 +57,7 @@ class Navbar extends React.Component {
         </Sider>
         <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }} />
-        
+            
           <Footer style={{ textAlign: 'center' }}>StoXkeeper ©2020 </Footer>
         </Layout>
       </Layout>

@@ -8,6 +8,7 @@ import reliance from './images/reliance.png';
 import sbi from './images/sbi.jpg';
 import { BackSide, FrontSide } from './flippycards';
 import Flippy from './flippy';
+import { NavLink } from 'react-router-dom';
 
 const FlippyStyle = {
     width: '300px',
@@ -42,8 +43,10 @@ const FlippyStyle = {
           justifyContent: 'center',
           flexDirection: 'column'
         }}>
-        <div className="button">3Yr. return</div>
-        
+
+        <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+        <NavLink to="/" className="button">Graph</NavLink>
+
       </BackSide>
     </React.Fragment>
     );
@@ -71,7 +74,9 @@ const FlippyStyle = {
               justifyContent: 'center',
               flexDirection: 'column'
             }}>
-            <div className="button">3Yr. return</div>
+
+            <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+        <NavLink to="/" className="button">Graph</NavLink>
             
           </BackSide>
         </React.Fragment>
@@ -100,7 +105,9 @@ const FlippyStyle = {
                 justifyContent: 'center',
                 flexDirection: 'column'
               }}>
-              <div className="button">3Yr. return</div>
+
+              <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+              <NavLink to="/" className="button">Graph</NavLink>
               
             </BackSide>
           </React.Fragment>
@@ -129,7 +136,8 @@ const FlippyStyle = {
                   justifyContent: 'center',
                   flexDirection: 'column'
                 }}>
-                <div className="button">3Yr. return</div>
+                <div className="button">3Yr. return</div><br/><br/>
+                <div className="button">Graph</div>
                 
               </BackSide>
             </React.Fragment>
@@ -158,7 +166,9 @@ const FlippyStyle = {
                     justifyContent: 'center',
                     flexDirection: 'column'
                   }}>
-                  <div className="button">3Yr. return</div>
+
+                  <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                  <NavLink to="/" className="button">Graph</NavLink>
                   
                 </BackSide>
               </React.Fragment>
@@ -187,7 +197,9 @@ const FlippyStyle = {
                       justifyContent: 'center',
                       flexDirection: 'column'
                     }}>
-                    <div className="button">3Yr. return</div>
+
+                    <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                    <NavLink to="/" className="button">Graph</NavLink>
                     
                   </BackSide>
                 </React.Fragment>
