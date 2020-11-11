@@ -16,7 +16,7 @@ function App() {
           <Navbar>
           <Switch>
           <Route exact path="/cardbse" component={CardBSE} />
-          {/* <Route exact path="/news" component={News} /> */}
+          <Route exact path="/news" component={News} />
         </Switch>
       {/* <NavItem  /> */}
       <NavItem icon={< CaretIcon />}>
