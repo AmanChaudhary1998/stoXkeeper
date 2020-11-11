@@ -1,26 +1,37 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom';
 import Chart from "react-apexcharts";
 import axios from 'axios';
 import './style.css';
 
 class ApexChart extends React.Component {
 
+  switchTimeSeries = (series, array) => {
+    console.log(series);
+    this.setState({
+      timeSeries: series,
+      timeArray: array,
+    });  
+    this.forceUpdate();
+  }
+  
   componentDidMount() {
     const IEX = [];
     const API = axios.create({
-      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=RELIANCE.BSE&apikey=R96R6264N1DFR7E3",
+      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_"+this.state.timeSeries+"&symbol=RELIANCE.BSE&apikey=R96R6264N1DFR7E3",
     });
     API.get("/").then(result => {
       var count  = 0;
-      for(var i in result.data['Monthly Time Series']){
+      console.log(result, this.state.timeArray+' Time Series', );
+      for(var i in result.data[this.state.timeArray+' Time Series']){
         count = count + 1;
         // if(count === 10){
         //   break;
         // }
         var temp = {
             date: i,
-            close: parseFloat(result.data['Monthly Time Series'][i]['4. close']),
-            open: parseFloat(result.data['Monthly Time Series'][i]['1. open']),
+            close: parseFloat(result.data[this.state.timeArray+' Time Series'][i]['4. close']),
+            open: parseFloat(result.data[this.state.timeArray+' Time Series'][i]['1. open']),
         };
         IEX.push({...temp});
     }
@@ -38,13 +49,16 @@ class ApexChart extends React.Component {
         // data:[1,2,3,4,5,6,7],
       }]
     })
-  })
+    console.log(this.state.series)
   }
+    )}
 
   constructor(props) {
     super(props);
 
   this.state = {
+      timeSeries: 'WEEKLY',
+      timeArray: 'Weekly',
       series: [{
         name: '',
         data: [],
@@ -61,9 +75,9 @@ class ApexChart extends React.Component {
             enabled: true,
             autoScaleYaxis: true
           },
-          toolbar: {
-            autoSelected: 'zoom'
-          }
+          // toolbar: {
+          //   autoSelected: 'zoom'
+          // }
         },
         colors: ['#a5f778','#6ef5cc'],
         dataLabels: {
@@ -113,11 +127,22 @@ class ApexChart extends React.Component {
   } }
   render() {
     return (
+    <React.Fragment>
+      <div className="graphButtons">
+        <button className="graphButton" onClick={() => this.switchTimeSeries('MONTHLY', 'Monthly')}>Monthly</button>
+        <button className="graphButton" onClick={() => this.switchTimeSeries('YEARLY', 'Yearly')}>Yearly</button>
+        <button className="graphButton" onClick={() => this.switchTimeSeries('DAILY', 'Daily')}>Daily</button>
+      </div>
       <div id="chart" className="CompanyChartContainer">
         <Chart options={this.state.options} series={this.state.series} type="area" height={350} />
       </div>
+    </React.Fragment>
     );
   }
 }
 
 export default ApexChart;
+// ReactDOM.render(
+//   ApexChart,
+//   document.getElementById('header')
+// );

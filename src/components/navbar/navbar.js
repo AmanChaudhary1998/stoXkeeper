@@ -55,8 +55,7 @@ class Navbar extends React.Component {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }} />
-        
+          <Header id="header" className="site-layout-background" style={{ padding: 0 }} />
           <Footer style={{ textAlign: 'center' }}>StoXkeeper ©2020 </Footer>
         </Layout>
       </Layout>

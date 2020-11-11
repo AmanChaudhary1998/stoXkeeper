@@ -12,7 +12,7 @@ function App() {
       <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/CardBSE" component={CardBSE}/>
+        <Route exact path="/CardBSE" component={ApexChart}/>
       </Switch>
       
       </Router>
