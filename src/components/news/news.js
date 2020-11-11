@@ -22,6 +22,7 @@ class News extends Component{
       })
     });
     const data = await response.json();
+    console.log(data);
     this.setState({news: data.item})
   }
   render()
