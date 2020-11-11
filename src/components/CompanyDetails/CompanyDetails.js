@@ -24,7 +24,6 @@ const CompanyDetails = () => {
 
     return(
         <div>
-            {/* <Navbar /> */}
             <div className="CompanyContainer">
                 <div className="CompanyDetails">
                     <h1 className="CompanyHead">Company Name</h1>   
