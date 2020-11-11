@@ -90,7 +90,11 @@ function DropdownMenu() {
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
               <h2>Settings</h2>
             </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}>
+              <NavLink to="/news">
+                Market News
+              </NavLink>
+              </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
