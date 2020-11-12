@@ -100,7 +100,6 @@ function DropdownMenu() {
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
           </div>
         </CSSTransition>
-  
       </div>
     );
   }
