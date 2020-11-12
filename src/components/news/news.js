@@ -28,7 +28,7 @@ class News extends Component{
   {
     return(
       <div>
-        <h1 className="stoxnews" style={{color: "white"}}>News Feed</h1>
+        <h1 className="stoxnews" style={{color: "white", marginTop:"90px"}}><center>News Feed</center></h1>
         <NewsDesign news={this.state.news} />
       </div>
     )
