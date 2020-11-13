@@ -128,13 +128,13 @@ class ApexChart extends React.Component {
   render() {
     return (
     <React.Fragment>
-      <div className="graphButtons">
+      {/* <div className="graphButtons">
         <button className="graphButton" onClick={() => this.switchTimeSeries('MONTHLY', 'Monthly')}>Monthly</button>
         <button className="graphButton" onClick={() => this.switchTimeSeries('YEARLY', 'Yearly')}>Yearly</button>
         <button className="graphButton" onClick={() => this.switchTimeSeries('DAILY', 'Daily')}>Daily</button>
-      </div>
+      </div> */}
       <div id="chart" className="CompanyChartContainer">
-        <Chart options={this.state.options} series={this.state.series} type="area" height={350} />
+        <Chart options={this.state.options} series={this.state.series} type="area" height={400} />
       </div>
     </React.Fragment>
     );

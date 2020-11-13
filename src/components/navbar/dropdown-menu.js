@@ -43,18 +43,18 @@ function DropdownMenu() {
           unmountOnExit
           onEnter={calcHeight}>
           <div className="menu">
-            <DropdownItem>My Profile</DropdownItem>
+            <DropdownItem><div className="link-text">My Profile</div></DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
               goToMenu="market">
-              Market
+              <div className="link-text">Market</div>
             </DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
               goToMenu="settings">
-              Settings
+                <div className="link-text">Settings</div>
             </DropdownItem>
   
           </div>
@@ -68,15 +68,16 @@ function DropdownMenu() {
           onEnter={calcHeight}>
           <div className="menu">
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-              <h2>Market</h2>
+              <h2 className="link-text">Market</h2>
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
                     <NavLink to="/cardbse" >
-                         BSE
+                        <div className="link-text">BSE</div>
                     </NavLink>
                 </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
-                NASDAQ</DropdownItem>
+                <div className="link-text">NASDAQ</div>
+            </DropdownItem>
           </div>
         </CSSTransition>
   
@@ -88,14 +89,18 @@ function DropdownMenu() {
           onEnter={calcHeight}>
           <div className="menu">
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-              <h2>Settings</h2>
+              <h2 className="link-text">Settings</h2>
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
               <NavLink to="/news">
-                Market News
+              <div className="link-text">Market News</div>
               </NavLink>
               </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}>
+            <NavLink to="/companydetails">
+              <div className="link-text">Company Chart</div>
+            </NavLink>
+            </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
           </div>
