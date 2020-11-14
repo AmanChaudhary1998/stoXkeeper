@@ -11,13 +11,15 @@ import Flippy from './flippy';
 import { NavLink } from 'react-router-dom';
 
 const FlippyStyle = {
-    width: '300px',
-    height: '300px',
+    width: '150px',
+    height: '150px',
     textAlign: 'center',
     color: '#FFF',
     fontFamily: 'sans-serif',
     fontSize: '30px',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    // border: '1px solid green' ,
+    // borderRadius: '50px',
   }
 
   const DefaultCardContents = ({ children }) => (
@@ -27,7 +29,9 @@ const FlippyStyle = {
           backgroundColor: '#585858',
           display: 'flex',
           alignItems: 'center',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          border: '1px solid transparent' ,
+          borderRadius: '30px',
         }}
       >
          <img
@@ -41,7 +45,9 @@ const FlippyStyle = {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          border: '1px solid transparent' ,
+          borderRadius: '30px',
         }}>
 
         <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>

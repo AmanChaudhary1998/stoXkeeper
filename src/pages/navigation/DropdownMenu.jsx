@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { NavLink } from 'react-router-dom';
 
-import './navbar.styles.css';
-
-import { ReactComponent as CogIcon } from './icons/cog.svg';
-import { ReactComponent as ChevronIcon } from './icons/chevron.svg';
-import { ReactComponent as ArrowIcon } from './icons/arrow.svg';
-import { ReactComponent as BoltIcon } from './icons/bolt.svg';
+import { ReactComponent as CogIcon } from '../../icons/cog.svg';
+import { ReactComponent as ChevronIcon } from '../../icons/chevron.svg';
+import { ReactComponent as ArrowIcon } from '../../icons/arrow.svg';
+import { ReactComponent as BoltIcon } from '../../icons/bolt.svg';
+import './Navbar.styles.css';
 
 function DropdownMenu() {
     const [activeMenu, setActiveMenu] = useState('main');
@@ -43,18 +41,18 @@ function DropdownMenu() {
           unmountOnExit
           onEnter={calcHeight}>
           <div className="menu">
-            <DropdownItem><div className="link-text">My Profile</div></DropdownItem>
+            <DropdownItem>My Profile</DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
               goToMenu="market">
-              <div className="link-text">Market</div>
+              Market
             </DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
               goToMenu="settings">
-                <div className="link-text">Settings</div>
+              Settings
             </DropdownItem>
   
           </div>
@@ -68,16 +66,32 @@ function DropdownMenu() {
           onEnter={calcHeight}>
           <div className="menu">
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-              <h2 className="link-text">Market</h2>
+              <h2>Market</h2>
+            </DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}
+                goToMenu="bse">
+                BSE</DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}
+                goToMenu="bse">
+                NASDAQ</DropdownItem>
+          </div>
+        </CSSTransition>
+
+        <CSSTransition
+          in={activeMenu === 'bse'}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}>
+          <div className="menu">
+            <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+              <h2>BSE</h2>
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
-                    <NavLink to="/cardbse" >
-                        <div className="link-text">BSE</div>
-                    </NavLink>
+                <a href="/">
+                Select Company
+                </a>
                 </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}>
-                <div className="link-text">NASDAQ</div>
-            </DropdownItem>
           </div>
         </CSSTransition>
   
@@ -89,22 +103,15 @@ function DropdownMenu() {
           onEnter={calcHeight}>
           <div className="menu">
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-              <h2 className="link-text">Settings</h2>
+              <h2>Settings</h2>
             </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}>
-              <NavLink to="/news">
-              <div className="link-text">Market News</div>
-              </NavLink>
-              </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}>
-            <NavLink to="/companydetails">
-              <div className="link-text">Company Chart</div>
-            </NavLink>
-            </DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
+            <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
           </div>
         </CSSTransition>
+  
       </div>
     );
   }
