@@ -11,8 +11,8 @@ import Flippy from './flippy';
 import { NavLink } from 'react-router-dom';
 
 const FlippyStyle = {
-    width: '150px',
-    height: '150px',
+    width: '200px',
+    height: '200px',
     textAlign: 'center',
     color: '#FFF',
     fontFamily: 'sans-serif',
@@ -31,7 +31,7 @@ const FlippyStyle = {
           alignItems: 'center',
           flexDirection: 'column',
           border: '1px solid transparent' ,
-          borderRadius: '30px',
+          borderRadius: '10px',
         }}
       >
          <img
@@ -47,7 +47,7 @@ const FlippyStyle = {
           justifyContent: 'center',
           flexDirection: 'column',
           border: '1px solid transparent' ,
-          borderRadius: '30px',
+          borderRadius: '10px',
         }}>
 
         <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
@@ -64,7 +64,9 @@ const FlippyStyle = {
               backgroundColor: '#585858',
               display: 'flex',
               alignItems: 'center',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              border: '1px solid transparent',
+              borderRadius: '10px',
             }}
           >
              <img
@@ -78,7 +80,9 @@ const FlippyStyle = {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              flexDirection: 'column'
+              flexDirection: 'column',
+              border: '1px solid transparent' ,
+              borderRadius: '10px',
             }}>
 
             <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
@@ -95,7 +99,9 @@ const FlippyStyle = {
                 backgroundColor: '#585858',
                 display: 'flex',
                 alignItems: 'center',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                border: '1px solid transparent' ,
+                borderRadius: '10px',
               }}
             >
                <img
@@ -109,7 +115,9 @@ const FlippyStyle = {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                flexDirection: 'column'
+                flexDirection: 'column',
+                border: '1px solid transparent' ,
+                borderRadius: '10px',
               }}>
 
               <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
@@ -126,7 +134,9 @@ const FlippyStyle = {
                   backgroundColor: '#585858',
                   display: 'flex',
                   alignItems: 'center',
-                  flexDirection: 'column'
+                  flexDirection: 'column',
+                  border: '1px solid transparent' ,
+                  borderRadius: '10px',
                 }}
               >
                  <img
@@ -140,7 +150,9 @@ const FlippyStyle = {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  flexDirection: 'column'
+                  flexDirection: 'column',
+                  border: '1px solid transparent' ,
+                  borderRadius: '10px',
                 }}>
                 <div className="button">3Yr. return</div><br/><br/>
                 <div className="button">Graph</div>
@@ -156,7 +168,9 @@ const FlippyStyle = {
                     backgroundColor: '#585858',
                     display: 'flex',
                     alignItems: 'center',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    border: '1px solid transparent' ,
+                    borderRadius: '10px',
                   }}
                 >
                    <img
@@ -170,7 +184,9 @@ const FlippyStyle = {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    border: '1px solid transparent' ,
+                    borderRadius: '10px',
                   }}>
 
                   <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
@@ -187,7 +203,9 @@ const FlippyStyle = {
                       backgroundColor: '#585858',
                       display: 'flex',
                       alignItems: 'center',
-                      flexDirection: 'column'
+                      flexDirection: 'column',
+                      border: '1px solid transparent' ,
+                      borderRadius: '10px',
                     }}
                   >
                      <img
@@ -201,7 +219,9 @@ const FlippyStyle = {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      flexDirection: 'column'
+                      flexDirection: 'column',
+                      border: '1px solid transparent' ,
+                      borderRadius: '10px',
                     }}>
 
                     <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
@@ -296,8 +316,8 @@ class CardBSE extends Component{
         return(
             <>
                 <div className="">
-                    <div className="" style={{ display: 'flex',width: '80%',marginLeft:'10%', marginRight:'40%', justifyContent: 'space-between', 'flex-wrap': 'wrap'}}>
-                        <FlippyOnHover flipDirection="horizontal"/>
+                    <div className="" style={{ display: 'flex',width: '100%',marginLeft:'10px', marginRight:'40%', justifyContent: 'space-between', 'flex-wrap': 'wrap'}}>
+                        <FlippyOnHover flipDirection="horizontal" />
                         <FlippyOH flipDirection="horizontal" />
                         <FlippyInfosys flipDirection="horizontal" />
                         <FlippyTCS flipDirection="horizontal" />
