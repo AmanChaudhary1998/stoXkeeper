@@ -16,11 +16,6 @@ export const NewsDesign = (props)=>{
             {props.news.map(info =>
             (
                 <div>
-                    {/* <Collapse defaultActiveKey={info.guid} onChange={callback}>
-                        <Panel header={info.title} key={info.guid}>
-                            <p>{info.description}</p>
-                        </Panel>
-                    </Collapse> */}
                     <Collapse accordion>
                         <Panel header={info.title} key={info.guid}>
                             <p>{info.description}</p>

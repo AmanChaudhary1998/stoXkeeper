@@ -167,4 +167,16 @@
     padding-right: 12px;
     padding-left: 0;
   }
+
+  .NewsContainer{
+    /* border: 2px solid blanchedalmond; */
+    margin: 10px 35px 20px 35px; 
+    padding: 20px 20px 20px 20px;
+  }
+
+  .stoxnews{
+    color: #a5f778;
+     margin-top:30px;
+     text-align: center;
+  }
   

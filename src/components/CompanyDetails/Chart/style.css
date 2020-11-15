@@ -27,3 +27,7 @@
 .graphButton:hover{
   border-color: #a5f778;
 }
+
+.active{
+  border-color: #a5f778;
+}
