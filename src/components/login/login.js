@@ -16,7 +16,7 @@ class Login extends Component {
 			container.classList.add("right-panel-active");
 		});
 
-signInButton.addEventListener('click', () => {
+		signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
@@ -26,7 +26,7 @@ signInButton.addEventListener('click', () => {
 			<>
 				<div class="container" id="container">
 					<div class="form-container sign-up-container">
-						<form action="#">
+						<form action="#" method="POST">
 							<h1>Create Account</h1>
 							<div class="social-container">
 							</div>
@@ -38,7 +38,7 @@ signInButton.addEventListener('click', () => {
 						</form>
 					</div>
 					<div class="form-container sign-in-container">
-						<form action="#">
+						<form action="#" method="POST">
 							<h1>Sign in</h1>
 							<div class="social-container">
 							</div>

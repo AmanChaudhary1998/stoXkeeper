@@ -39,24 +39,6 @@ export default class Flippy extends React.Component {
     } : flipOnClick ? {
     } : {};
 
-    const method1 = !!flipOH ? {
-      onMouseEnter: this.handleHoverOn,
-      onMouseLeave: this.handleHoverOff,
-    } : flipOnClick ? {
-    } : {};
-
-    const method2 = !!flipInfosys ? {
-      onMouseEnter: this.handleHoverOn,
-      onMouseLeave: this.handleHoverOff,
-    } : flipOnClick ? {
-    } : {};
-
-    const method3 = !!flipTCS ? {
-      onMouseEnter: this.handleHoverOn,
-      onMouseLeave: this.handleHoverOff,
-    } : flipOnClick ? {
-    } : {};
-
     return (
       <div
         className="flippy-container"
@@ -64,9 +46,6 @@ export default class Flippy extends React.Component {
           ...style
         }}
         {...methods}
-        {...method1}
-        {...method2}
-        {...method3}
       >
       <div className={`flippy-cardContainer-wrapper ${flipDirection}`}>
         <div

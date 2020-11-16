@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { BackSide, FrontSide } from './flippycards';
+import Flippy from './flippy';
 
 import hdfc from './images/hdfc.jpg'
 import icici from './images/icici.jpg';
 import infosys from './images/infosys.jpg';
-import tcs from './images/tcs.png';
+import tcs from './images/tcs.jpg';
 import reliance from './images/reliance.png';
-import sbi from './images/sbi.jpg';
-import { BackSide, FrontSide } from './flippycards';
-import Flippy from './flippy';
-import { NavLink } from 'react-router-dom';
+import airtel from './images/airtel.jpg';
+import hcl from './images/hcl.jpg';
+import itc from './images/itc.jpg';
 
 const FlippyStyle = {
     width: '200px',
@@ -22,7 +25,7 @@ const FlippyStyle = {
     // borderRadius: '50px',
   }
 
-  const DefaultCardContents = ({ children }) => (
+  const HDFCCardContents = ({ children }) => (
     <React.Fragment>
       <FrontSide
         style={{
@@ -37,7 +40,8 @@ const FlippyStyle = {
          <img
           src={hdfc}
           style={{ maxWidth: '100%', maxHeight: '100%' }}
-        /> 
+        />
+
       </FrontSide>
       <BackSide
         style={{
@@ -196,7 +200,7 @@ const FlippyStyle = {
               </React.Fragment>
               );
       
-              const SBICardContents = ({ children }) => (
+              const AirtelCardContents = ({ children }) => (
                 <React.Fragment>
                   <FrontSide
                     style={{
@@ -209,7 +213,7 @@ const FlippyStyle = {
                     }}
                   >
                      <img
-                      src={sbi}
+                      src={airtel}
                       style={{ maxWidth: '100%', maxHeight: '100%' }}
                     /> 
                   </FrontSide>
@@ -230,6 +234,76 @@ const FlippyStyle = {
                   </BackSide>
                 </React.Fragment>
                 );
+
+                const HCLCardContents = ({ children }) => (
+                  <React.Fragment>
+                    <FrontSide
+                      style={{
+                        backgroundColor: '#585858',
+                        display: 'flex',
+                        alignItems: 'center',
+                        flexDirection: 'column',
+                        border: '1px solid transparent' ,
+                        borderRadius: '10px',
+                      }}
+                    >
+                       <img
+                        src={hcl}
+                        style={{ maxWidth: '100%', maxHeight: '100%' }}
+                      /> 
+                    </FrontSide>
+                    <BackSide
+                      style={{
+                        backgroundColor: '#585858',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                        border: '1px solid transparent' ,
+                        borderRadius: '10px',
+                      }}>
+  
+                      <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                      <NavLink to="/" className="button">Graph</NavLink>
+                      
+                    </BackSide>
+                  </React.Fragment>
+                  );
+
+                  const ITCCardContents = ({ children }) => (
+                    <React.Fragment>
+                      <FrontSide
+                        style={{
+                          backgroundColor: '#585858',
+                          display: 'flex',
+                          alignItems: 'center',
+                          flexDirection: 'column',
+                          border: '1px solid transparent' ,
+                          borderRadius: '10px',
+                        }}
+                      >
+                         <img
+                          src={itc}
+                          style={{ maxWidth: '100%', maxHeight: '100%' }}
+                        /> 
+                      </FrontSide>
+                      <BackSide
+                        style={{
+                          backgroundColor: '#585858',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexDirection: 'column',
+                          border: '1px solid transparent' ,
+                          borderRadius: '10px',
+                        }}>
+    
+                        <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                        <NavLink to="/" className="button">Graph</NavLink>
+                        
+                      </BackSide>
+                    </React.Fragment>
+                    );
       
       const FlippyOnHover = ({ flipDirection = 'vertical' }) => (
         <Flippy
@@ -237,16 +311,17 @@ const FlippyStyle = {
           flipDirection={flipDirection}
           style={FlippyStyle}
         >
-          <DefaultCardContents> </DefaultCardContents>
+          <HDFCCardContents> </HDFCCardContents>
+
         </Flippy>
         
       );
       
       const FlippyOH = ({ flipDirection = 'vertical' }) => (
         <Flippy
-          flipOH={true}
-          flipDirection={flipDirection}
-          style={FlippyStyle}
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
         >
           <IciciCardContents></IciciCardContents>
         </Flippy>
@@ -255,9 +330,9 @@ const FlippyStyle = {
       
       const FlippyInfosys = ({ flipDirection = 'vertical' }) => (
         <Flippy
-          flipInfosys={true}
-          flipDirection={flipDirection}
-          style={FlippyStyle}
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
         >
           <InfosysCardContents></InfosysCardContents>
         </Flippy>
@@ -266,9 +341,9 @@ const FlippyStyle = {
       
       const FlippyTCS = ({ flipDirection = 'vertical' }) => (
         <Flippy
-          flipTCS={true}
-          flipDirection={flipDirection}
-          style={FlippyStyle}
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
         >
           <TCSCardContents></TCSCardContents>
         </Flippy>
@@ -277,27 +352,47 @@ const FlippyStyle = {
       
       const FlippyReliance = ({ flipDirection = 'vertical' }) => (
         <Flippy
-          flipTCS={true}
-          flipDirection={flipDirection}
-          style={FlippyStyle}
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
         >
           <RelianceCardContents></RelianceCardContents>
         </Flippy>
         
       );
       
-      const FlippySBI = ({ flipDirection = 'vertical' }) => (
+      const FlippyAirtel = ({ flipDirection = 'vertical' }) => (
         <Flippy
-          flipTCS={true}
-          flipDirection={flipDirection}
-          style={FlippyStyle}
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
         >
-          <SBICardContents></SBICardContents>
+          <AirtelCardContents></AirtelCardContents>
         </Flippy>
         
       );
       
-
+      const FlippyHCL = ({ flipDirection = 'vertical' }) => (
+        <Flippy
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
+        >
+          <HCLCardContents></HCLCardContents>
+        </Flippy>
+        
+      );
+      
+      const FlippyITC = ({ flipDirection = 'vertical' }) => (
+        <Flippy
+        flipOnHover={true}
+        flipDirection={flipDirection}
+        style={FlippyStyle}
+        >
+          <ITCCardContents></ITCCardContents>
+        </Flippy>
+        
+      );
 class CardBSE extends Component{
     constructor(props) {
         super(props);
@@ -316,13 +411,15 @@ class CardBSE extends Component{
         return(
             <>
                 <div className="">
-                    <div className="" style={{ display: 'flex',width: '100%',marginLeft:'10px', marginRight:'40%', justifyContent: 'space-between', 'flex-wrap': 'wrap'}}>
+                    <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'90px', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
                         <FlippyOnHover flipDirection="horizontal" />
                         <FlippyOH flipDirection="horizontal" />
                         <FlippyInfosys flipDirection="horizontal" />
                         <FlippyTCS flipDirection="horizontal" />
                         <FlippyReliance flipDirection="horizontal"/>
-                        <FlippySBI flipDirection="horizontal" />
+                        <FlippyAirtel flipDirection="horizontal" />
+                        <FlippyHCL flipDirection="horizontal" />
+                        <FlippyITC flipDirection="horizontal" />
                     </div>
                 </div>
     
