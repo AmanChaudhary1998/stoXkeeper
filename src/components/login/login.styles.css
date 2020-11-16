@@ -1,13 +1,17 @@
-h1 {
+
+
+
+
+.login-h1 {
 	font-weight: bold;
 	margin: 0;
 }
 
-h2 {
+.login-h2 {
 	text-align: center;
 }
 
-p {
+.login-p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -15,18 +19,14 @@ p {
 	margin: 20px 0 30px;
 }
 
-span {
-	font-size: 12px;
-}
-
-a {
+.login_a {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-button {
+.login_button {
 	border-radius: 20px;
 	border: 1px solid #a5f778;
 	background-color: #a5f778;
@@ -39,20 +39,20 @@ button {
 	transition: transform 80ms ease-in;
 }
 
-button:active {
+.login_button:active {
 	transform: scale(0.95);
 }
 
-button:focus {
+.login_button:focus {
 	outline: none;
 }
 
-button.ghost {
+.login_button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
 
-form {
+.login_form {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -199,13 +199,3 @@ input {
 	margin: 20px 0;
 }
 
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
