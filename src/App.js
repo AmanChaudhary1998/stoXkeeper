@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router,Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router,Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
 import { ReactComponent as CaretIcon } from '../src/components/navbar/icons/caret.svg';
@@ -26,6 +26,7 @@ function App() {
               <Route exact path="/news" component={News} />
               <Route exact path="/companydetails" component={CompanyDetails} />
               <Route exact path="/login" component={Login} />
+              <Redirect to="/"/>
             </Switch>
           </div>
         </Router>

@@ -43,7 +43,13 @@ function DropdownMenu() {
           unmountOnExit
           onEnter={calcHeight}>
           <div className="menu">
-            <DropdownItem><div className="link-text">My Profile</div></DropdownItem>
+            <DropdownItem>
+            <NavLink to="/">
+              <div className="link-text">
+                <h2>StoXkeeper</h2>
+                </div>
+                </NavLink>
+                </DropdownItem>
             <DropdownItem
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
