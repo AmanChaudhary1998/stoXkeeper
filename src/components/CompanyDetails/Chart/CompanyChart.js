@@ -45,8 +45,6 @@ class ApexChart extends React.Component {
             y: [d.open, d.open, d.close, d.close],
           }
         })
-        // type:'line',
-        // data:[1,2,3,4,5,6,7],
       }]
     })
     console.log(this.state.series)
@@ -68,8 +66,6 @@ class ApexChart extends React.Component {
       series: [{
         name: '',
         data: [],
-        // type:'line',
-        // data:[1,2,3,4,5,6,7],
       }],
       options: {
         chart: {
@@ -81,13 +77,13 @@ class ApexChart extends React.Component {
             enabled: true,
             autoScaleYaxis: true
           },
-          // toolbar: {
-          //   autoSelected: 'zoom'
-          // }
+          toolbar: {
+            autoSelected: 'zoom'
+          }
         },
-        colors: ['#a5f778','#6ef5cc'],
+        colors: ['#e1ad01'],
         dataLabels: {
-          enabled: false
+          enabled: false,
         },
         markers: {
           size: 0,
@@ -109,8 +105,6 @@ class ApexChart extends React.Component {
         yaxis: {
           labels: {
             formatter: function (val) {
-              // console.log('y', val);
-              // return (val / 1000000).toFixed(0);
               return val;
             },
           },
