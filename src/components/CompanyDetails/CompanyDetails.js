@@ -5,8 +5,8 @@ import { CODE } from './companyCode.enum';
 
 const CompanyDetails = (props) => (
     <React.Fragment>
-        <CompanyDashboard companyName={this.props.companyname} />
-        <CompanyChart companyName={this.props.companyname} />
+        <CompanyDashboard companyName={CODE[props.location.companyName]} />
+        <CompanyChart companyName={CODE[props.location.companyName]} />
     </React.Fragment>
 );
 

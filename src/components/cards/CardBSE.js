@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import { BackSide, FrontSide } from './flippycards';
 import Flippy from './flippy';
@@ -194,7 +194,10 @@ const FlippyStyle = {
                   }}>
 
                   <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
-                  <NavLink to="/" className="button">Graph</NavLink>
+                  <Link to={{
+                    pathname: '/companydetails',
+                    companyName: 'RELIANCE',
+                  }}  className="button">Graph</Link>
                   
                 </BackSide>
               </React.Fragment>
@@ -229,7 +232,10 @@ const FlippyStyle = {
                     }}>
 
                     <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
-                    <NavLink to="/" className="button">Graph</NavLink>
+                    <Link to={{
+                    pathname: '/companydetails',
+                    companyName: 'AIRTEL',
+                  }}  className="button">Graph</Link>
                     
                   </BackSide>
                 </React.Fragment>
@@ -264,7 +270,10 @@ const FlippyStyle = {
                       }}>
   
                       <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
-                      <NavLink to="/" className="button">Graph</NavLink>
+                      <Link to={{
+                        pathname: '/companydetails',
+                        companyName: 'HCL',
+                      }}  className="button">Graph</Link>
                       
                     </BackSide>
                   </React.Fragment>

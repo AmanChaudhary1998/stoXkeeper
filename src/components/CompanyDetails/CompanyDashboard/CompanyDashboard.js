@@ -4,10 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 import './CompanyDashboard.css';
 
-const CompanyDetails = () => {
+const CompanyDetails = (props) => {
     const [Data, updateData] = useState({});
     const API = axios.create({
-    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=RELIANCE.BSE&apikey=R96R6264N1DFR7E3",
+    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+props.companyName+"&apikey=R96R6264N1DFR7E3",
     });
     var data = {};
 
