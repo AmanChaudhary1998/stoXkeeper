@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './bse.styles.css';
 
 import { BackSide, FrontSide } from './flippycards';
 import Flippy from './flippy';
 
-import techMahindra from './images/tech-mahindra.jfif'
+import techM from './images/techM.jpg';
 import LT from './images/LT.png';
 import infosys from './images/infosys.jpg';
 import tcs from './images/tcs.jpg';
@@ -34,38 +35,16 @@ const FlippyStyle = {
 
   const TechMahindraCardContents = ({ children }) => (
     <React.Fragment>
-      <FrontSide
-        style={{
-          backgroundColor: '#585858',
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'column',
-          border: '1px solid transparent' ,
-          borderRadius: '10px',
-        }}
-      >
-         <img
-          src={techMahindra}
-          style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-
+      <FrontSide className="front-card" >
+        <img src={techM} className='img-style' />
+        {/* <p className='img-heading'>Tech Mahindra</p> */}
       </FrontSide>
-      <BackSide
-        style={{
-          backgroundColor: '#585858',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          border: '1px solid transparent' ,
-          borderRadius: '10px',
-        }}>
-
-        <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+      <BackSide className="back-card">
+        <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
         <Link to={{
-                    pathname: '/companydetails',
-                    companyName: 'TECHMAHINDRA',
-                  }}  className="button">Graph
+                  pathname: '/companydetails',
+                  companyName: 'TECHMAHINDRA',
+                }}  className="card-button">Graph
         </Link>
       </BackSide>
     </React.Fragment>
@@ -73,37 +52,17 @@ const FlippyStyle = {
 
     const LTCardContents = ({ children }) => (
         <React.Fragment>
-          <FrontSide
-            style={{
-              backgroundColor: '#585858',
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: 'column',
-              border: '1px solid transparent',
-              borderRadius: '10px',
-            }}
-          >
-             <img
-              src={LT}
-              style={{ maxWidth: '100%', maxHeight: '100%' }}
-            /> 
+          <FrontSide className="front-card">
+          <img src={LT} style={{maxWidth:"50%", maxHeight:"50%"}} className='img-style' />
+          {/* <p className='img-heading'>Larsen & Tubro</p> */}
           </FrontSide>
-          <BackSide
-            style={{
-              backgroundColor: '#585858',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              border: '1px solid transparent' ,
-              borderRadius: '10px',
-            }}>
+          <BackSide className="back-card">
 
-            <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+            <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
             <Link to={{
                     pathname: '/companydetails',
                     companyName: 'LT',
-                  }}  className="button">Graph
+                  }}  className="card-button">Graph
               </Link>
             
           </BackSide>
@@ -112,37 +71,17 @@ const FlippyStyle = {
       
         const InfosysCardContents = ({ children }) => (
           <React.Fragment>
-            <FrontSide
-              style={{
-                backgroundColor: '#585858',
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'column',
-                border: '1px solid transparent' ,
-                borderRadius: '10px',
-              }}
-            >
-               <img
-                src={infosys}
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
-              /> 
+            <FrontSide className="front-card" >
+            <img src={infosys} className='img-style' />
+            {/* <p className='img-heading'>Tech Mahindra</p> */}
             </FrontSide>
-            <BackSide
-              style={{
-                backgroundColor: '#585858',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                border: '1px solid transparent' ,
-                borderRadius: '10px',
-              }}>
+            <BackSide className="back-card">
 
-              <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+              <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
               <Link to={{
                     pathname: '/companydetails',
                     companyName: 'INFOSYS',
-                  }}  className="button">Graph
+                  }}  className="card-button">Graph
               </Link>
               
             </BackSide>
@@ -151,36 +90,16 @@ const FlippyStyle = {
           
           const TCSCardContents = ({ children }) => (
             <React.Fragment>
-              <FrontSide
-                style={{
-                  backgroundColor: '#585858',
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexDirection: 'column',
-                  border: '1px solid transparent' ,
-                  borderRadius: '10px',
-                }}
-              >
-                 <img
-                  src={tcs}
-                  style={{ maxWidth: '100%', maxHeight: '100%' }}
-                /> 
+              <FrontSide className="front-card" >
+              <img src={tcs} className='img-style' />
+              {/* <p className='img-heading'>Tech Mahindra</p> */}
               </FrontSide>
-              <BackSide
-                style={{
-                  backgroundColor: '#585858',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexDirection: 'column',
-                  border: '1px solid transparent' ,
-                  borderRadius: '10px',
-                }}>
-                <div className="button">3Yr. return</div><br/><br/>
+              <BackSide className="back-card">
+                <div className="card-button">3Yr. return</div><br/><br/>
                 <Link to={{
                     pathname: '/companydetails',
                     companyName: 'TCS',
-                  }}  className="button">Graph
+                  }}  className="card-button">Graph
                 </Link>
                 
               </BackSide>
@@ -189,37 +108,17 @@ const FlippyStyle = {
       
             const RelianceCardContents = ({ children }) => (
               <React.Fragment>
-                <FrontSide
-                  style={{
-                    backgroundColor: '#585858',
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection: 'column',
-                    border: '1px solid transparent' ,
-                    borderRadius: '10px',
-                  }}
-                >
-                   <img
-                    src={reliance}
-                    style={{ maxWidth: '100%', maxHeight: '100%' }}
-                  /> 
+                <FrontSide className="front-card" >
+                <img src={reliance} className='img-style' />
+                {/* <p className='img-heading'>Tech Mahindra</p> */}
                 </FrontSide>
-                <BackSide
-                  style={{
-                    backgroundColor: '#585858',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                    border: '1px solid transparent' ,
-                    borderRadius: '10px',
-                  }}>
+                <BackSide className="back-card">
 
-                  <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                  <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                   <Link to={{
                     pathname: '/companydetails',
                     companyName: 'RELIANCE',
-                  }}  className="button">Graph</Link>
+                  }}  className="card-button">Graph</Link>
                   
                 </BackSide>
               </React.Fragment>
@@ -227,37 +126,17 @@ const FlippyStyle = {
       
               const AirtelCardContents = ({ children }) => (
                 <React.Fragment>
-                  <FrontSide
-                    style={{
-                      backgroundColor: '#585858',
-                      display: 'flex',
-                      alignItems: 'center',
-                      flexDirection: 'column',
-                      border: '1px solid transparent' ,
-                      borderRadius: '10px',
-                    }}
-                  >
-                     <img
-                      src={airtel}
-                      style={{ maxWidth: '100%', maxHeight: '100%' }}
-                    /> 
+                  <FrontSide className="front-card" >
+                  <img src={airtel} className='img-style' />
+                  {/* <p className='img-heading'>Tech Mahindra</p> */}
                   </FrontSide>
-                  <BackSide
-                    style={{
-                      backgroundColor: '#585858',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
-                      border: '1px solid transparent' ,
-                      borderRadius: '10px',
-                    }}>
+                  <BackSide className="back-card">
 
-                    <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                    <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                     <Link to={{
                     pathname: '/companydetails',
                     companyName: 'AIRTEL',
-                  }}  className="button">Graph</Link>
+                  }}  className="card-button">Graph</Link>
                     
                   </BackSide>
                 </React.Fragment>
@@ -265,37 +144,17 @@ const FlippyStyle = {
 
                 const HCLCardContents = ({ children }) => (
                   <React.Fragment>
-                    <FrontSide
-                      style={{
-                        backgroundColor: '#585858',
-                        display: 'flex',
-                        alignItems: 'center',
-                        flexDirection: 'column',
-                        border: '1px solid transparent' ,
-                        borderRadius: '10px',
-                      }}
-                    >
-                       <img
-                        src={hcl}
-                        style={{ maxWidth: '100%', maxHeight: '100%' }}
-                      /> 
+                    <FrontSide className="front-card" >
+                    <img src={hcl} className='img-style' />
+                    {/* <p className='img-heading'>Tech Mahindra</p> */}
                     </FrontSide>
-                    <BackSide
-                      style={{
-                        backgroundColor: '#585858',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        flexDirection: 'column',
-                        border: '1px solid transparent' ,
-                        borderRadius: '10px',
-                      }}>
+                    <BackSide className="back-card">
   
-                      <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                      <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                       <Link to={{
                         pathname: '/companydetails',
                         companyName: 'HCL',
-                      }}  className="button">Graph
+                      }}  className="card-button">Graph
                       </Link>
                       
                     </BackSide>
@@ -304,37 +163,17 @@ const FlippyStyle = {
 
                   const SBICardContents = ({ children }) => (
                     <React.Fragment>
-                      <FrontSide
-                        style={{
-                          backgroundColor: '#585858',
-                          display: 'flex',
-                          alignItems: 'center',
-                          flexDirection: 'column',
-                          border: '1px solid transparent' ,
-                          borderRadius: '10px',
-                        }}
-                      >
-                         <img
-                          src={sbi}
-                          style={{ maxWidth: '100%', maxHeight: '100%' }}
-                        /> 
+                      <FrontSide className="front-card" >
+                      <img src={sbi} className='img-style' />
+                      {/* <p className='img-heading'>Tech Mahindra</p> */}
                       </FrontSide>
-                      <BackSide
-                        style={{
-                          backgroundColor: '#585858',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          flexDirection: 'column',
-                          border: '1px solid transparent' ,
-                          borderRadius: '10px',
-                        }}>
+                      <BackSide className="back-card">
     
-                        <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                        <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                         <Link to={{
                           pathname: '/companydetails',
                           companyName: 'SBI',
-                          }}  className="button">Graph
+                          }}  className="card-button">Graph
                         </Link>
                         
                       </BackSide>
@@ -344,37 +183,17 @@ const FlippyStyle = {
 ///////////////////////////////////////////////    NASDAQ     ////////////////////////////////////////////////////////
                     const MicrosoftCardContents = ({ children }) => (
                       <React.Fragment>
-                        <FrontSide
-                          style={{
-                            backgroundColor: '#585858',
-                            display: 'flex',
-                            alignItems: 'center',
-                            flexDirection: 'column',
-                            border: '1px solid transparent' ,
-                            borderRadius: '10px',
-                          }}
-                        >
-                           <img
-                            src={microsoft}
-                            style={{ maxWidth: '100%', maxHeight: '100%' }}
-                          /> 
+                        <FrontSide className="front-card" >
+                        <img src={microsoft} className='img-style' />
+                        {/* <p className='img-heading'>Tech Mahindra</p> */}
                         </FrontSide>
-                        <BackSide
-                          style={{
-                            backgroundColor: '#585858',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            flexDirection: 'column',
-                            border: '1px solid transparent' ,
-                            borderRadius: '10px',
-                          }}>
+                        <BackSide className="back-card">
       
-                          <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                          <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                           <Link to={{
                             pathname: '/companydetails',
                             companyName: 'MICROSOFT',
-                            }}  className="button">Graph
+                            }}  className="card-button">Graph
                           </Link>
                           
                         </BackSide>
@@ -383,37 +202,17 @@ const FlippyStyle = {
 
                       const AppleCardContents = ({ children }) => (
                         <React.Fragment>
-                          <FrontSide
-                            style={{
-                              backgroundColor: '#585858',
-                              display: 'flex',
-                              alignItems: 'center',
-                              flexDirection: 'column',
-                              border: '1px solid transparent' ,
-                              borderRadius: '10px',
-                            }}
-                          >
-                             <img
-                              src={apple}
-                              style={{ maxWidth: '100%', maxHeight: '100%' }}
-                            /> 
+                          <FrontSide className="front-card" >
+                          <img src={apple} className='img-style' />
+                          {/* <p className='img-heading'>Tech Mahindra</p> */}
                           </FrontSide>
-                          <BackSide
-                            style={{
-                              backgroundColor: '#585858',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              flexDirection: 'column',
-                              border: '1px solid transparent' ,
-                              borderRadius: '10px',
-                            }}>
+                          <BackSide className="back-card">
         
-                            <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                            <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                             <Link to={{
                               pathname: '/companydetails',
                               companyName: 'APPLE',
-                              }}  className="button">Graph
+                              }}  className="card-button">Graph
                             </Link>
                             
                           </BackSide>
@@ -422,37 +221,17 @@ const FlippyStyle = {
 
                         const AmazonCardContents = ({ children }) => (
                           <React.Fragment>
-                            <FrontSide
-                              style={{
-                                backgroundColor: '#585858',
-                                display: 'flex',
-                                alignItems: 'center',
-                                flexDirection: 'column',
-                                border: '1px solid transparent' ,
-                                borderRadius: '10px',
-                              }}
-                            >
-                               <img
-                                src={amanzon}
-                                style={{ maxWidth: '100%', maxHeight: '100%' }}
-                              /> 
+                            <FrontSide className="front-card" >
+                            <img src={amanzon} className='img-style' /> 
+                            {/* <p className='img-heading'>Tech Mahindra</p> */}
                             </FrontSide>
-                            <BackSide
-                              style={{
-                                backgroundColor: '#585858',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                flexDirection: 'column',
-                                border: '1px solid transparent' ,
-                                borderRadius: '10px',
-                              }}>
+                            <BackSide className="back-card">
           
-                              <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                              <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                               <Link to={{
                                 pathname: '/companydetails',
                                 companyName: 'AMAZON',
-                                }}  className="button">Graph
+                                }}  className="card-button">Graph
                               </Link>
                               
                             </BackSide>
@@ -461,37 +240,17 @@ const FlippyStyle = {
 
                           const AlphabetCardContents = ({ children }) => (
                             <React.Fragment>
-                              <FrontSide
-                                style={{
-                                  backgroundColor: '#585858',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  flexDirection: 'column',
-                                  border: '1px solid transparent' ,
-                                  borderRadius: '10px',
-                                }}
-                              >
-                                 <img
-                                  src={alphabet}
-                                  style={{ maxWidth: '100%', maxHeight: '100%' }}
-                                /> 
+                              <FrontSide className="front-card" >
+                              <img src={alphabet} className='img-style' />
+                              {/* <p className='img-heading'>Tech Mahindra</p> */}
                               </FrontSide>
-                              <BackSide
-                                style={{
-                                  backgroundColor: '#585858',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center',
-                                  flexDirection: 'column',
-                                  border: '1px solid transparent' ,
-                                  borderRadius: '10px',
-                                }}>
+                              <BackSide className="back-card" >
             
-                                <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                                <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                 <Link to={{
                                   pathname: '/companydetails',
                                   companyName: 'ALPHABET',
-                                  }}  className="button">Graph
+                                  }}  className="card-button">Graph
                                 </Link>
                                 
                               </BackSide>
@@ -500,37 +259,17 @@ const FlippyStyle = {
 
                             const FacebookCardContents = ({ children }) => (
                               <React.Fragment>
-                                <FrontSide
-                                  style={{
-                                    backgroundColor: '#585858',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    flexDirection: 'column',
-                                    border: '1px solid transparent' ,
-                                    borderRadius: '10px',
-                                  }}
-                                >
-                                   <img
-                                    src={facebook}
-                                    style={{ maxWidth: '100%', maxHeight: '100%' }}
-                                  /> 
+                                <FrontSide className="front-card" >
+                                <img src={facebook} className='img-style' />
+                                {/* <p className='img-heading'>Tech Mahindra</p> */}
                                 </FrontSide>
-                                <BackSide
-                                  style={{
-                                    backgroundColor: '#585858',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    flexDirection: 'column',
-                                    border: '1px solid transparent' ,
-                                    borderRadius: '10px',
-                                  }}>
+                                <BackSide className="back-card">
               
-                                  <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                                  <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                   <Link to={{
                                     pathname: '/companydetails',
                                     companyName: 'FACEBOOK',
-                                    }}  className="button">Graph
+                                    }}  className="card-button">Graph
                                   </Link>
                                   
                                 </BackSide>
@@ -539,37 +278,17 @@ const FlippyStyle = {
 
                               const IntelCardContents = ({ children }) => (
                                 <React.Fragment>
-                                  <FrontSide
-                                    style={{
-                                      backgroundColor: '#585858',
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      flexDirection: 'column',
-                                      border: '1px solid transparent' ,
-                                      borderRadius: '10px',
-                                    }}
-                                  >
-                                     <img
-                                      src={intel}
-                                      style={{ maxWidth: '100%', maxHeight: '100%' }}
-                                    /> 
+                                  <FrontSide className="front-card" >
+                                  <img src={intel} className='img-style' />
+                                  {/* <p className='img-heading'>Tech Mahindra</p> */}
                                   </FrontSide>
-                                  <BackSide
-                                    style={{
-                                      backgroundColor: '#585858',
-                                      display: 'flex',
-                                      alignItems: 'center',
-                                      justifyContent: 'center',
-                                      flexDirection: 'column',
-                                      border: '1px solid transparent' ,
-                                      borderRadius: '10px',
-                                    }}>
+                                  <BackSide className="back-card">
                 
-                                    <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                                    <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                     <Link to={{
                                       pathname: '/companydetails',
                                       companyName: 'INTEL',
-                                      }}  className="button">Graph
+                                      }}  className="card-button">Graph
                                     </Link>
                                     
                                   </BackSide>
@@ -578,37 +297,17 @@ const FlippyStyle = {
 
                                 const AdobeCardContents = ({ children }) => (
                                   <React.Fragment>
-                                    <FrontSide
-                                      style={{
-                                        backgroundColor: '#585858',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        flexDirection: 'column',
-                                        border: '1px solid transparent' ,
-                                        borderRadius: '10px',
-                                      }}
-                                    >
-                                       <img
-                                        src={adobe}
-                                        style={{ maxWidth: '100%', maxHeight: '100%' }}
-                                      /> 
+                                    <FrontSide className="front-card" >
+                                    <img src={adobe} className='img-style' />
+                                    {/* <p className='img-heading'>Tech Mahindra</p> */}
                                     </FrontSide>
-                                    <BackSide
-                                      style={{
-                                        backgroundColor: '#585858',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        flexDirection: 'column',
-                                        border: '1px solid transparent' ,
-                                        borderRadius: '10px',
-                                      }}>
+                                    <BackSide className="back-card">
                   
-                                      <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                                      <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                       <Link to={{
                                         pathname: '/companydetails',
                                         companyName: 'ADOBE',
-                                        }}  className="button">Graph
+                                        }}  className="card-button">Graph
                                       </Link>
                                       
                                     </BackSide>
@@ -617,37 +316,17 @@ const FlippyStyle = {
 
                                   const NetflixCardContents = ({ children }) => (
                                     <React.Fragment>
-                                      <FrontSide
-                                        style={{
-                                          backgroundColor: '#585858',
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                          flexDirection: 'column',
-                                          border: '1px solid transparent' ,
-                                          borderRadius: '10px',
-                                        }}
-                                      >
-                                         <img
-                                          src={netflix}
-                                          style={{ maxWidth: '100%', maxHeight: '100%' }}
-                                        /> 
+                                      <FrontSide className="front-card">
+                                      <img src={netflix} className='img-style' />
+                                      {/* <p className='img-heading'>Tech Mahindra</p> */}
                                       </FrontSide>
-                                      <BackSide
-                                        style={{
-                                          backgroundColor: '#585858',
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                          justifyContent: 'center',
-                                          flexDirection: 'column',
-                                          border: '1px solid transparent' ,
-                                          borderRadius: '10px',
-                                        }}>
+                                      <BackSide className="back-card">
                     
-                                        <NavLink to="/" className="button">3Yr. return</NavLink><br/><br/>
+                                        <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                         <Link to={{
                                           pathname: '/companydetails',
                                           companyName: 'NETFLIX',
-                                          }}  className="button">Graph
+                                          }}  className="card-button">Graph
                                         </Link>
                                         
                                       </BackSide>
@@ -846,7 +525,8 @@ class CardBSE extends Component{
         return(
             <>
                 <div className="">
-                    <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'10%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
+                      <div className="stock-head"><p className="market-head">Bombay Stock Exchange(INDIA)</p></div>
+                    <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'12.5%',marginTop: '-5%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
                         <FlippyOnHover flipDirection="horizontal" />
                         <FlippyOH flipDirection="horizontal" />
                         <FlippyInfosys flipDirection="horizontal" />
@@ -859,7 +539,8 @@ class CardBSE extends Component{
                 </div>
 
                 <div className="">
-                    <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'10%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
+                <div className="stock-head" style={{marginTop:'5%'}}><p className="market-head">NASDAQ(USA)</p></div>
+                    <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'12.5%',marginTop: '-5%', marginBottom: '5%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
                         <FlippyMicrosoft flipDirection="horizontal" />
                         <FlippyApple flipDirection="horizontal" />
                         <FlippyAmazon flipDirection="horizontal" />
