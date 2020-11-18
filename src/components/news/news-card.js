@@ -3,10 +3,6 @@ import './news.styles.css';
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 
-function callback(key) {
-    console.log(key);
-  }
-
 export const NewsDesign = (props)=>{
     return (
         <>
