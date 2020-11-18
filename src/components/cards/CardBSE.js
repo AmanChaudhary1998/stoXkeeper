@@ -525,7 +525,7 @@ class CardBSE extends Component{
         return(
             <>
                 <div className="">
-                      <div className="stock-head"><p className="market-head">Bombay Stock Exchange(INDIA)</p></div>
+                      <div className="stock-head"><p className="market-head" style={{textAlign:'center'}}>Bombay Stock Exchange(INDIA)</p></div>
                     <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'12.5%',marginTop: '-5%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
                         <FlippyOnHover flipDirection="horizontal" />
                         <FlippyOH flipDirection="horizontal" />
@@ -539,7 +539,7 @@ class CardBSE extends Component{
                 </div>
 
                 <div className="">
-                <div className="stock-head" style={{marginTop:'5%'}}><p className="market-head">NASDAQ(USA)</p></div>
+                <div className="stock-head" style={{marginTop:'5%', textAlign:'center'}}><p className="market-head">NASDAQ(USA)</p></div>
                     <div className="" style={{ display: 'flex',width: '75%',columnGap: '70px',marginLeft:'12.5%',marginTop: '-5%', marginBottom: '5%', justifyContent: 'space-around', 'flex-wrap': 'wrap'}}>
                         <FlippyMicrosoft flipDirection="horizontal" />
                         <FlippyApple flipDirection="horizontal" />

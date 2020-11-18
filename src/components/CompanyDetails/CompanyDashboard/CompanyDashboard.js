@@ -39,7 +39,7 @@ const CompanyDetails = (props) => {
                 </div>
                 <div className="CompanyAbout">
                     <h1 className="CompanyHead">About</h1>
-                    <p className="CompanyAboutPara">Reliance Industries is engaged in activities spanning across hydrocarbon exploration and production, petroleum refining and marketing, petrochemicals, retail, digital services and financial services.</p>
+                    <p className="CompanyAboutPara"></p>
                 </div>
             </div>
         </div>
