@@ -61,13 +61,13 @@ body {
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #a5f77a;
-    border: 2px solid #a5f77a;
+    color: #FFD700;
+    border: 2px solid #FFD700;
     text-decoration: none;
   }
   .button:hover{
-    background: #a5f77a;
-    color: #f00e0e;
+    background: #FFD700;
+    color: #151616;
     font-weight: bold;
   }
 

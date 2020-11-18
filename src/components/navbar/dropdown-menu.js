@@ -60,7 +60,7 @@ function DropdownMenu() {
               leftIcon={<CogIcon />}
               rightIcon={<ChevronIcon />}
               goToMenu="settings">
-                <div className="link-text">Settings</div>
+                <div className="link-text">More</div>
             </DropdownItem>
   
           </div>
@@ -78,12 +78,12 @@ function DropdownMenu() {
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
                     <NavLink to="/cardbse" >
-                        <div className="link-text">BSE</div>
+                        <div className="link-text">COMPANIES</div>
                     </NavLink>
                 </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}>
+            {/* <DropdownItem leftIcon={<BoltIcon />}>
                 <div className="link-text">NASDAQ</div>
-            </DropdownItem>
+            </DropdownItem> */}
           </div>
         </CSSTransition>
   
@@ -95,18 +95,18 @@ function DropdownMenu() {
           onEnter={calcHeight}>
           <div className="menu">
             <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-              <h2 className="link-text">Settings</h2>
+              <h2 className="link-text">More</h2>
             </DropdownItem>
             <DropdownItem leftIcon={<BoltIcon />}>
               <NavLink to="/news">
               <div className="link-text">Market News</div>
               </NavLink>
               </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}>
+            {/* <DropdownItem leftIcon={<BoltIcon />}>
             <NavLink to="/companydetails">
               <div className="link-text">Company Chart</div>
             </NavLink>
-            </DropdownItem>
+            </DropdownItem> */}
             <DropdownItem leftIcon={<BoltIcon />}>
               <NavLink to="/login">
                 <div className="link-text">Login</div>

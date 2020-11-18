@@ -19,36 +19,32 @@ class ApexChart extends React.Component {
   getData = () => {
     console.log('[GETDATA]',this.state);
     const IEX = [];
+    var name = '';
     const API = axios.create({
-      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_"+this.state.timeSeries+"&symbol=RELIANCE.BSE&apikey=R96R6264N1DFR7E3",
+      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_"+this.state.timeSeries+"&symbol="+this.props.companyName+"&apikey=R96R6264N1DFR7E3",
     });
     API.get("/").then(result => {
+      console.log('result', result);
       var count  = 0;
-      // console.log(result, this.state.timeArray+' Time Series', );
       for(var i in result.data[this.state.timeArray]){
         count = count + 1;
-        // if(count === 10){
-        //   break;
-        // }
         var temp = {
             date: i,
-            close: parseFloat(result.data[this.state.timeArray][i]['4. close']),
-            open: parseFloat(result.data[this.state.timeArray][i]['1. open']),
+            close: parseFloat(result.data[this.state.timeArray][i]['4. close']).toFixed(2),
+            open: parseFloat(result.data[this.state.timeArray][i]['1. open']).toFixed(2),
         };
         IEX.push({...temp});
+        name = result.data['Meta Data']['2. Symbol'].split('.')[0];
     }
     this.setState({
       series:[{
-        name: 'XYZ MOTORS',
+        name: name,
         data: IEX.map((d) => {
-          // console.log('data',d.date, d.open, d.close);
           return {
             x: new Date(d.date),
             y: [d.open, d.open, d.close, d.close],
           }
         })
-        // type:'line',
-        // data:[1,2,3,4,5,6,7],
       }]
     })
     console.log(this.state.series)
@@ -70,8 +66,6 @@ class ApexChart extends React.Component {
       series: [{
         name: '',
         data: [],
-        // type:'line',
-        // data:[1,2,3,4,5,6,7],
       }],
       options: {
         chart: {
@@ -83,13 +77,13 @@ class ApexChart extends React.Component {
             enabled: true,
             autoScaleYaxis: true
           },
-          // toolbar: {
-          //   autoSelected: 'zoom'
-          // }
+          toolbar: {
+            autoSelected: 'zoom'
+          }
         },
-        colors: ['#a5f778','#6ef5cc'],
+        colors: ['#e1ad01'],
         dataLabels: {
-          enabled: false
+          enabled: false,
         },
         markers: {
           size: 0,
@@ -111,8 +105,6 @@ class ApexChart extends React.Component {
         yaxis: {
           labels: {
             formatter: function (val) {
-              // console.log('y', val);
-              // return (val / 1000000).toFixed(0);
               return val;
             },
           },

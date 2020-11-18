@@ -4,10 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 import './CompanyDashboard.css';
 
-const CompanyDetails = () => {
+const CompanyDetails = (props) => {
     const [Data, updateData] = useState({});
     const API = axios.create({
-    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=RELIANCE.BSE&apikey=R96R6264N1DFR7E3",
+    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+props.companyName+"&apikey=R96R6264N1DFR7E3",
     });
     var data = {};
 
@@ -25,7 +25,7 @@ const CompanyDetails = () => {
         <div>
             <div className="CompanyContainer">
                 <div className="CompanyDetails">
-                    <h1 className="CompanyHead">Company Name</h1>   
+                    <h1 className="CompanyHead">{Data['01. symbol'] === undefined ? '' : Data['01. symbol'].split('.')[0].charAt(0).toUpperCase() + Data['01. symbol'].split('.')[0].slice(1)}</h1>   
                     <div className="CompanyFieldContainer">
                         <div className="CompanyName">Symbol: {Data['01. symbol']}</div>
                         <div className="CompanyName">Price: {Data['05. price']}</div>

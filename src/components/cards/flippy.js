@@ -31,7 +31,7 @@ export default class Flippy extends React.Component {
   }
 
   render() {
-    const { children, style, flipDirection, flipOnHover, flipOH,flipOnClick,flipInfosys,flipTCS } = this.props;
+    const { children, style, flipDirection, flipOnHover,flipOnClick} = this.props;
     const { isFlipped, isTouchDevice } = this.state;
     const methods = !!flipOnHover ? {
       onMouseEnter: this.handleHoverOn,

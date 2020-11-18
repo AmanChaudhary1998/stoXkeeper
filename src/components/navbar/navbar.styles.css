@@ -1,6 +1,6 @@
     body {
       margin: 0;
-      background: #151616;
+      background:  #0c1922;
       font-family: roboto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -13,11 +13,11 @@
     
     
     :root {
-      --bg:  #242526;
+      --bg:  #0c1922;
       --bg-accent: #484a4d;
-      --text-color: #dadce1;
+      --text-color: #FFD700;
       --nav-size: 60px;
-      --border: 1px solid #474a4d;
+      --border: 2px solid transparent;
       --border-radius: 8px;
       --speed: 500ms; 
     }
@@ -42,6 +42,8 @@
       padding: 0 1rem;
       border-bottom: var(--border);
       z-index: 500;
+      /* position: fixed; */
+      /* margin-left: 94%; */
     }
     
     /* <ul> */
@@ -75,7 +77,7 @@
       align-items: center;
       justify-content: center;
       transition: filter 300ms;
-      color: #a5f778;
+      color: #FFD700;
     }
     
     .icon-button:hover {
@@ -83,7 +85,7 @@
     }
     
     .icon-button svg { 
-      fill: #a5f778;
+      fill: #FFD700;
       width: 20px;
       height: 20px;
     }
@@ -171,5 +173,5 @@
     }
 
     .link-text {
-      color: #a5f778;
+      color: #FFD700;
     }  

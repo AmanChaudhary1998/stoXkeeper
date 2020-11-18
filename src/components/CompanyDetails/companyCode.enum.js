@@ -1,0 +1,18 @@
+export const CODE = {
+    RELIANCE: "RELIANCE.BSE",
+    AIRTEL: "532454.BSE",
+    HCL:"HCLTECH.BSE",
+    INFOSYS:"INFY.BSE",
+    TCS:"TCS.BSE",
+    SBI:"SBIN.BSE",
+    LT:"LT.BSE",
+    TECHMAHINDRA:"532755.BSE",
+    MICROSOFT:"MSFT",
+    APPLE:"AAPL",
+    AMAZON:"AMZN",
+    ALPHABET:"GOOG",
+    FACEBOOK:"FB",
+    INTEL:"INTC",
+    ADOBE:"ADBE",
+    NETFLIX:"NFLX",
+}
