@@ -1,5 +1,4 @@
 export const CODE = {
-    DESCRIPTION:"description",
     RELIANCE: "RELIANCE.BSE",
     AIRTEL: "532454.BSE",
     HCL:"HCLTECH.BSE",
