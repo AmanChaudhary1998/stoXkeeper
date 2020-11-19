@@ -21,7 +21,7 @@ class ApexChart extends React.Component {
     const IEX = [];
     var name = '';
     const API = axios.create({
-      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_"+this.state.timeSeries+"&symbol="+this.props.companyName+"&apikey=R96R6264N1DFR7E3",
+      baseURL: "https://www.alphavantage.co/query?function=TIME_SERIES_"+this.state.timeSeries+"&symbol="+this.props.companyCode+"&apikey=R96R6264N1DFR7E3",
     });
     API.get("/").then(result => {
       console.log('result', result);
@@ -34,7 +34,7 @@ class ApexChart extends React.Component {
             open: parseFloat(result.data[this.state.timeArray][i]['1. open']).toFixed(2),
         };
         IEX.push({...temp});
-        name = result.data['Meta Data']['2. Symbol'].split('.')[0];
+        name = this.props.companyName;
     }
     this.setState({
       series:[{

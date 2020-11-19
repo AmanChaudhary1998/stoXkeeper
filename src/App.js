@@ -24,7 +24,7 @@ function App() {
             <Switch>
               <Route exact path="/cardbse" component={CardBSE} />
               <Route exact path="/news" component={News} />
-              <Route exact path="/companydetails" component={CompanyDetails} />
+              <Route exact path="/companydetails/:companyName" component={CompanyDetails} />
               <Route exact path="/login" component={Login} />
               <Redirect to="/"/>
             </Switch>
