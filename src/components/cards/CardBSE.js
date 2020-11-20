@@ -42,7 +42,8 @@ const FlippyStyle = {
       <BackSide className="back-card">
         <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
         <Link to={{
-                  pathname: '/companydetails/TECHMAHINDRA'
+                  pathname: '/companydetails/TECHMAHINDRA',
+                  description:'TECHMAHINDRA'
                 }}  className="card-button">Graph
         </Link>
       </BackSide>
@@ -60,6 +61,7 @@ const FlippyStyle = {
             <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
             <Link to={{
                     pathname: '/companydetails/LT',
+                    description:'LT'
                   }}  className="card-button">Graph
               </Link>
             
@@ -78,6 +80,7 @@ const FlippyStyle = {
               <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
               <Link to={{
                     pathname: '/companydetails/INFOSYS',
+                    description:'INFOSYS'
                   }}  className="card-button">Graph
               </Link>
               
@@ -94,7 +97,8 @@ const FlippyStyle = {
               <BackSide className="back-card">
                 <div className="card-button">3Yr. return</div><br/><br/>
                 <Link to={{
-                    pathname: '/companydetails/TCS'
+                    pathname: '/companydetails/TCS',
+                    description:'TCS'
                   }}  className="card-button">Graph
                 </Link>
                 
@@ -112,7 +116,8 @@ const FlippyStyle = {
 
                   <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                   <Link to={{
-                    pathname: '/companydetails/RELIANCE'
+                    pathname: '/companydetails/RELIANCE',
+                    description: 'RELIANCE'
                   }}  className="card-button">Graph</Link>
                   
                 </BackSide>
@@ -129,7 +134,8 @@ const FlippyStyle = {
 
                     <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                     <Link to={{
-                    pathname: '/companydetails/AIRTEL'
+                    pathname: '/companydetails/AIRTEL',
+                    description:'AIRTEL'
                   }}  className="card-button">Graph</Link>
                     
                   </BackSide>
@@ -147,6 +153,7 @@ const FlippyStyle = {
                       <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                       <Link to={{
                         pathname: '/companydetails/HCL',
+                        description:'HCL'
                       }}  className="card-button">Graph
                       </Link>
                       
@@ -165,6 +172,7 @@ const FlippyStyle = {
                         <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                         <Link to={{
                           pathname: '/companydetails/SBI',
+                          description:'SBI'
                           }}  className="card-button">Graph
                         </Link>
                         
@@ -184,6 +192,7 @@ const FlippyStyle = {
                           <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                           <Link to={{
                             pathname: '/companydetails/MICROSOFT',
+                            description:'MICROSOFT'
                             }}  className="card-button">Graph
                           </Link>
                           
@@ -202,6 +211,7 @@ const FlippyStyle = {
                             <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                             <Link to={{
                               pathname: '/companydetails/APPLE',
+                              description:'APPLE'
                               }}  className="card-button">Graph
                             </Link>
                             
@@ -238,6 +248,7 @@ const FlippyStyle = {
                                 <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                 <Link to={{
                                   pathname: '/companydetails/ALPHABET',
+                                  description:'ALPHABET'
                                   }}  className="card-button">Graph
                                 </Link>
                                 
@@ -256,6 +267,7 @@ const FlippyStyle = {
                                   <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                   <Link to={{
                                     pathname: '/companydetails/FACEBOOK',
+                                    description:'FACEBOOK'
                                     }}  className="card-button">Graph
                                   </Link>
                                   
@@ -274,6 +286,7 @@ const FlippyStyle = {
                                     <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                     <Link to={{
                                       pathname: '/companydetails/INTEL',
+                                      description:'INTEL'
                                       }}  className="card-button">Graph
                                     </Link>
                                     
@@ -292,6 +305,7 @@ const FlippyStyle = {
                                       <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                       <Link to={{
                                         pathname: '/companydetails/ADOBE',
+                                        description:'ADOBE'
                                         }}  className="card-button">Graph
                                       </Link>
                                       
@@ -310,6 +324,7 @@ const FlippyStyle = {
                                         <Link to="/" className="card-button">3Yr. return</Link><br/><br/>
                                         <Link to={{
                                           pathname: '/companydetails/NETFLIX',
+                                          description:'NETFLIX'
                                           }}  className="card-button">Graph
                                         </Link>
                                         
