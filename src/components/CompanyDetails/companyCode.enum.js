@@ -1,31 +1,31 @@
 export const CODE = {
     RELIANCE: {
         code:"RELIANCE.BSE",
-        name:"Reliance Industries Ltd."
+        name:"Reliance Industries Ltd.",
     },
     AIRTEL:{
         code:"532454.BSE",
-        name:"Bharti Airtel Limited"
+        name:"Bharti Airtel Limited",
     },
     HCL:{
         code:"HCLTECH.BSE",
-        name:"HCL Technologies Limited"
+        name:"HCL Technologies Limited",
     },
     INFOSYS:{
         code:"INFY.BSE",
-        name:"Infosys Limited"
+        name:"Infosys Limited",
     },
     TCS:{
         code:"TCS.BSE",
-        name:"Tata Consultancy Services Limited"
+        name:"Tata Consultancy Services Limited",
     },
     SBI:{
         code:"SBIN.BSE",
-        name:"State Bank Of India"
+        name:"State Bank Of India",
     },
     LT:{
         code:"LT.BSE",
-        name:"Larsen & Toubro Limited"
+        name:"Larsen & Toubro Limited",
     },
     TECHMAHINDRA:{
         code:"532755.BSE",
@@ -33,11 +33,11 @@ export const CODE = {
     },
     MICROSOFT:{
         code:"MSFT",
-        name:"Microsoft Corporation"
+        name:"Microsoft Corporation",
     },
     APPLE:{
         code:"AAPL",
-        name:"Apple Inc."
+        name:"Apple Inc.",
     },
     AMAZON:{
         code:"AMZN",
