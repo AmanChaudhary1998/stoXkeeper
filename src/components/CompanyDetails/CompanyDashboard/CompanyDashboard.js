@@ -7,7 +7,7 @@ import './CompanyDashboard.css';
 const CompanyDetails = (props) => {
     const [Data, updateData] = useState({});
     const API = axios.create({
-    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+props.companyName+"&apikey=R96R6264N1DFR7E3",
+    baseURL: "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol="+props.companyCode+"&apikey=R96R6264N1DFR7E3",
     });
     var data = {};
 
@@ -25,7 +25,7 @@ const CompanyDetails = (props) => {
         <div>
             <div className="CompanyContainer">
                 <div className="CompanyDetails">
-                    <h1 className="CompanyHead">{Data['01. symbol'] === undefined ? '' : Data['01. symbol'].split('.')[0].charAt(0).toUpperCase() + Data['01. symbol'].split('.')[0].slice(1)}</h1>   
+                    <h1 className="CompanyHead">{props.companyName}</h1>
                     <div className="CompanyFieldContainer">
                         <div className="CompanyName">Symbol: {Data['01. symbol']}</div>
                         <div className="CompanyName">Price: {Data['05. price']}</div>
@@ -40,7 +40,7 @@ const CompanyDetails = (props) => {
                 <div className="CompanyAbout">
                     <h1 className="CompanyHead">About</h1>
                     <p className="CompanyAboutPara">
-                        {props.description}
+                        {props.companyDescription}
                     </p>
                 </div>
             </div>
