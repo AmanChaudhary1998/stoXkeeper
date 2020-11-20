@@ -39,7 +39,9 @@ const CompanyDetails = (props) => {
                 </div>
                 <div className="CompanyAbout">
                     <h1 className="CompanyHead">About</h1>
-                    <p className="CompanyAboutPara"></p>
+                    <p className="CompanyAboutPara">
+                        {props.description}
+                    </p>
                 </div>
             </div>
         </div>
