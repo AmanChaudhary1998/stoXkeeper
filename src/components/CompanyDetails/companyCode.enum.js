@@ -2,68 +2,82 @@ export const CODE = {
     RELIANCE: {
         code:"RELIANCE.BSE",
         name:"Reliance Industries Ltd.",
+        tradingView: "BSE:RELIANCE",
     },
     AIRTEL:{
         code:"532454.BSE",
         name:"Bharti Airtel Limited",
+        tradingView:"BSE:BHARTIARTL",
     },
     HCL:{
         code:"HCLTECH.BSE",
         name:"HCL Technologies Limited",
-        
+        tradingView:"BSE:HCLTECH",
     },
     INFOSYS:{
         code:"INFY.BSE",
         name:"Infosys Limited",
-        
+        tradingView:"BSE:INFY",
     },
     TCS:{
         code:"TCS.BSE",
         name:"Tata Consultancy Services Limited",
+        tradingView:"BSE:TCS",
     },
     SBI:{
         code:"SBIN.BSE",
         name:"State Bank Of India",
+        tradingView:"BSE:SBIN",
     },
     LT:{
         code:"LT.BSE",
         name:"Larsen & Toubro Limited",
+        tradingView:"BSE:LT",
     },
     TECHMAHINDRA:{
         code:"532755.BSE",
         name:"Tech Mahindra Limited",
+        tradingView:"BSE:TECHM",
     },
     MICROSOFT:{
         code:"MSFT",
         name:"Microsoft Corporation",
+        tradingView:"NASDAQ:MSFT",
     },
     APPLE:{
         code:"AAPL",
         name:"Apple Inc.",
+        tradingView:"NASDAQ:AAPL",
     },
     AMAZON:{
         code:"AMZN",
         name:"Amazon.com, Inc.",
+        tradingView:"NASDAQ:AMZN",
     },
     ALPHABET:{
         code:"GOOG",
         name:"Alphabet Inc.",
+        tradingView:"NASDAQ:GOOG",
     },
     FACEBOOK:{
         code:"FB",
         name:"Facebook, Inc.",
+        tradingView:"NASDAQ:FB",
     },
     INTEL:{
         code:"INTC",
         name:"Intel Corporation",
+        tradingView:"NASDAQ:INTC",
     },
     ADOBE:{
         code:"ADBE",
         name:"Adobe Inc.",
+        tradingView:"NASDAQ:ADBE"
     },
     NETFLIX:{
         code:"NFLX",
         name:"Netflix, Inc.",
+        tradingView:"NASDAQ:NFLX",
     },
 }
 

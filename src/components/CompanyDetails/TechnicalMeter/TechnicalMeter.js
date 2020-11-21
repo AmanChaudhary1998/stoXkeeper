@@ -1,5 +1,5 @@
 import React from 'react';
-import './meter.css';
+import './TechnicalMeter.css';
 
 class TechnicalMeter extends React.Component{
     constructor(props){
@@ -16,7 +16,7 @@ class TechnicalMeter extends React.Component{
                 "width": 425,
                 "isTransparent": true,
                 "height": 450,
-                "symbol": "BSE:SBIN",
+                "symbol": "`+this.props.code+`",
                 "showIntervalTabs": true,
                 "locale": "in",
                 "colorTheme": "dark"
