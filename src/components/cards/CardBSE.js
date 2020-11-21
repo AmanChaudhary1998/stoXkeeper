@@ -550,7 +550,6 @@ class CardBSE extends Component{
                         <FlippyNetflix flipDirection="horizontal" />
                     </div>
                 </div>
-    
             </>
         )
     }
