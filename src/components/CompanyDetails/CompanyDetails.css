@@ -5,3 +5,24 @@
 .Dash {
 
 }
+
+.analysis{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+.meter{
+    border: solid 1px white;
+    margin-left: -8%;
+}
+
+.pie{
+    border: solid 1px white;
+    margin-left: 15%;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
