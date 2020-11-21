@@ -10,11 +10,13 @@ import NavItem from './components/navbar/navbar-items';
 import News from './components/news/news';
 import CompanyDetails from './components/CompanyDetails/CompanyDetails';
 import Login from './components/login/login';
+import TinkerTape from './components/home-page/ticker-tape';
 
 function App() {
   return (
     <>
         <Router>
+        <Route exact path="/" component={TinkerTape} />
           <Navbar>
             <NavItem icon={< CaretIcon />}>
               <DropdownMenu />
