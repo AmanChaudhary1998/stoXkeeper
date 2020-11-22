@@ -16,7 +16,7 @@ function App() {
   return (
     <>
         <Router>
-        <Route exact path="/" component={TinkerTape} />
+        <TinkerTape />
           <Navbar>
             <NavItem icon={< CaretIcon />}>
               <DropdownMenu />
