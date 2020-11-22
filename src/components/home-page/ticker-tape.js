@@ -85,9 +85,13 @@ class TinkerTape extends Component {
     }
     render() {
         return (
-            <div class="tradingview-widget-container" ref={this.tinker}>
-                <div class="tradingview-widget-container__widget"></div>
+          <>
+          <div className="inactiveLink ">
+            <div className="tradingview-widget-container" ref={this.tinker}>
+                <div className="tradingview-widget-container__widget"></div>
             </div>
+          </div>
+          </>
         )
     }
 };
