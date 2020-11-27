@@ -11,6 +11,7 @@ import News from './components/news/news';
 import CompanyDetails from './components/CompanyDetails/CompanyDetails';
 import Login from './components/login/login';
 import TinkerTape from './components/home-page/ticker-tape';
+import TechnicalMeter from './components/CompanyDetails/TechnicalMeter/TechnicalMeter';
 
 function App() {
   return (
