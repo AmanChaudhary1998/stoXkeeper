@@ -11,29 +11,21 @@ class Heading extends React.Component {
       return (
           <div>
             <div>
-            <div class="logo"><img  class="coin"src={coin} alt="coin" srcset=""/><h1 class="brand">StoXkeeper</h1></div> 
-            <img class="graph"src={graphs} alt="" srcset=""/>
-            <h1 class="name">StoXkeeper</h1>
-            <h3 className="tagline">The X factor in your Trade</h3>
-            <div> 
-      <a class="explore" href>Start Today!!</a>
-      </div>
-
+              <div class="logo"><img  class="coin"src={coin} alt="coin" srcset=""/><h1 class="brand">StoXkeeper</h1></div> 
+              <img class="graph"src={graphs} alt="" srcset=""/>
+              <h1 class="name">StoXkeeper</h1>
+              <h3 className="tagline">The X factor in your Trade</h3>
+              <div> 
+                <a class="explore" href>Start Today!!</a>
+              </div>
             </div>
-            
-         
             {/* <Typo /> */}
         <p class="typical"><Typical
           steps={['Stocks analysis 📈', 800, 'Latest news 📰', 800,'Prediction🔮',800]}
           loop={Infinity}
           wrapper="p"
         /></p>
-        
-        
-        
           </div>
-          
-        
       )
       }
       }
