@@ -3,6 +3,7 @@ import "./mid.css";
 import analysis from "../../../images/analysis.jpg";
 import prediction from "../../../images/Prediction.png";
 import news from "../../../images/news.jpg";
+import { NavLink } from "react-router-dom";
 export default function Mid(){
     return(
         <div>
@@ -32,7 +33,7 @@ export default function Mid(){
 	<div>		
 		<i class="ion-ios-play-outline">➡️</i>	
 		<div class="curl"></div>
-		<a href="www.google.com"></a>
+		<NavLink to="" href="www.google.com"></NavLink>
 	</div>				
 </figure>
 <figure class="snip0023">
@@ -40,7 +41,7 @@ export default function Mid(){
 	<div>		
 		<i class="ion-ios-play-outline">➡️</i>	
 		<div class="curl"></div>
-		<a href="www.google.com"></a>
+		<NavLink to="" href="www.google.com"></NavLink>
 	</div>				
 </figure>
 
