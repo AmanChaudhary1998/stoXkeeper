@@ -10,19 +10,16 @@ class MMI extends Component {
         script.src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" 
         script.async= true;
         script.innerHTML= 
-        `            
-         {
-          "interval": "1m",
-          "width": "425",
-          "isTransparent": false,
-          "height": "450",
-          "symbol": "NASDAQ:AMZN",
-          "showIntervalTabs": true,
-          "locale": "in",
-          "colorTheme": "light"
-        }
-          
-     `
+        `{
+            "interval": "1m",
+            "width": 425,
+            "isTransparent": true,
+            "height": 450,
+            "symbol": "NASDAQ:AMZN",
+            "showIntervalTabs": true,
+            "locale": "in",
+            "colorTheme": "dark"
+          }`
     this.mmi.current.appendChild(script);
 }
 render() {
@@ -41,3 +38,4 @@ render() {
 }
 };
 export default MMI;
+
