@@ -1,11 +1,8 @@
 import React from "react";
 import Typical from 'react-typical';
 import './heading.css';
-// import Mid from './mid';
-import ico from '../../../images/ico.gif';
+
 import graphs from "../../../images/graphs.gif";
-import hero from "../../../images/hero.svg";
-import coin from "../../../images/coin.png"
 // import Typo from "./Typo";
 class Heading extends React.Component {
     render () {
