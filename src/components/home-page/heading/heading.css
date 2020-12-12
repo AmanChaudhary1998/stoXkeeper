@@ -10,7 +10,7 @@
   float: right;
   margin-right: 5%;
   width:650px;
-  height:450px;
+  height:420px;
 }
 
 .head-para{
@@ -48,17 +48,18 @@
 }
   .brand{
     display: inline;
-    /* background:-webkit-linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%); */
-    background: #ffd700;
+    background:-webkit-linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 .name{
   font-size: 7rem;
   color: #ffd700;
-  /* color: linear-gradient(315deg, #fdb813 0%, #788cb6 74%); */
+  background: -webkit-linear-gradient(305deg, #f9484a 0%, #fbd72b 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
-  width: 50px;
+  width: 580px;
   margin-top: 8px;
 }
 .tagline{
@@ -69,11 +70,13 @@
 }
 
 .explore { 
+  margin-top: 10px;
   background-color: transparent;
   color: #ffd700; 
   letter-spacing: 1px; 
   font-family: 'Texturina', serif;  
-  font-size: 30px; 
+  padding: 10px 20px 10px 20px;
+  font-size: 25px; 
   border: 2px solid transparent; 
   cursor: pointer;
   /* background-color: #b5c327; */
@@ -88,4 +91,6 @@
 .heading-anim{
   display: block;
   height: 80px;
+  margin-top: 120px;
+  align-items: center;
 }

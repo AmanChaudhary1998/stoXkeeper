@@ -18,7 +18,7 @@ class Heading extends React.Component {
               <h3 className="tagline">The X factor in your Trade</h3>
               {/* <p className="head-para">Modern investing tools and data for everyone.</p> */}
               <div> 
-                <a class="explore" href>Start Today!!</a>
+                <button class="explore">Start Today!</button>
               </div>
             </div>
             {/* <Typo /> */}
