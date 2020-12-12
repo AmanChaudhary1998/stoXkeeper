@@ -1,3 +1,8 @@
+.pictures{
+  display: flex;
+  margin-left: 0%;
+  justify-content: space-around;
+}
 
 .hr-text {
     line-height: 1em;
@@ -34,23 +39,24 @@ font-size: 30px;
     }
   
   
-  .analysis{
+  .analysisHead{
       display:inline;
       color: #FFD700;
       font-size: 25px;
-
+      margin-left: 5%;
   }
   .performance{
       display: inline;
       color: #FFD700;
       font-size: 25px;
+      margin-left: 4%;
   }
   .news{
       display: inline;
       color: #FFD700;
       font-size: 25px;
   }
-  h3{
+  h4{
       display: inline;
       margin:5rem 8rem 0 7rem;
   }

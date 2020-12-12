@@ -14,8 +14,8 @@ const CompanyDetails = (props) => (
         {/* <div className="Fin">
             <CompanyFinancials code={CODE[props.match.params.companyName]['tradingView']} />
         </div> */}
-        <div className="analysis">
-            <div className="meter">
+        <div className="analysisMeter">
+            <div className="meterGraph">
                 <TechnicalMeter code={CODE[props.match.params.companyName]['tradingView']} />
             </div>
             <div className="pie">
