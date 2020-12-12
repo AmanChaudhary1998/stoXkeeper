@@ -4,6 +4,7 @@ import './heading.css';
 // import Mid from './mid';
 import ico from '../../../images/ico.gif';
 import graphs from "../../../images/graphs.gif";
+import hero from "../../../images/hero.svg";
 import coin from "../../../images/coin.png"
 // import Typo from "./Typo";
 class Heading extends React.Component {
@@ -12,7 +13,7 @@ class Heading extends React.Component {
           <div>
             <div>
               <div class="logo"><img  class="coin"src={coin} alt="coin" srcset=""/><h1 class="brand">StoXkeeper</h1></div> 
-              <img class="graph"src={graphs} alt="" srcset=""/>
+              <img class="graph"src={hero} alt="" srcset=""/>
               <h1 class="name">StoXkeeper</h1>
               <h3 className="tagline">The X factor in your Trade</h3>
               <div> 
