@@ -107,12 +107,11 @@ function DropdownMenu() {
               <div className="link-text">Company Chart</div>
             </NavLink>
             </DropdownItem> */}
-            <DropdownItem leftIcon={<BoltIcon />}>
+            {/* <DropdownItem leftIcon={<BoltIcon />}>
               <NavLink to="/login">
                 <div className="link-text">Login</div>
               </NavLink>
-            </DropdownItem>
-            <DropdownItem leftIcon={<BoltIcon />}></DropdownItem>
+            </DropdownItem> */}
           </div>
         </CSSTransition>
       </div>

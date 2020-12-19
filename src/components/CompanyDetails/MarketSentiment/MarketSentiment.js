@@ -7,7 +7,7 @@ class MarketSentiment extends React.Component {
 
       this.state = {
       
-        series: [60, 10, 30],
+        series: this.props.series,
         options: {
           chart: {
             width: 380,

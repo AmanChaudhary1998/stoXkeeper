@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router,Switch, Redirect } from 'react-router-dom';
+import  React from 'react';
 import './App.css';
 
 import { ReactComponent as CaretIcon } from '../src/components/navbar/icons/caret.svg';
@@ -15,6 +16,7 @@ import Search from './components/search/search';
 import HomePage from './components/home-page/homePage';
 
 function App() {
+
   return (
     <>
         <Router>

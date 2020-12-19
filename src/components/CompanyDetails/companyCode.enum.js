@@ -99,3 +99,55 @@ export const DESCRIPTION = {
     ADOBE:"Adobe Officially known as Adobe Systems, the company is known for its multimedia and creativity software products. Popular products include Photoshop, Acrobat Reader, and Adobe Creative Cloud",
     NETFLIX:"Netflix, in full Netflix, Inc., media-streaming and video-rental company founded in 1997 by American entrepreneurs Reed Hastings and Marc Randolph. It is also involved in the creation of original programming."
 }
+
+
+export const SENTI = {
+    RELIANCE: {
+        series: [40, 20, 40],
+    },
+    AIRTEL:{
+        series: [70, 10, 20],
+    },
+    HCL:{
+        series: [60, 10, 30],
+    },
+    INFOSYS:{
+        series: [50, 20, 30],
+    },
+    TCS:{
+        series: [40, 20, 40],
+    },
+    SBI:{
+        series: [60, 10, 30],
+    },
+    LT:{
+        series: [60, 20, 20],
+    },
+    TECHMAHINDRA:{
+        series: [20, 10, 70],
+    },
+    MICROSOFT:{
+        series: [70, 10, 20],
+    },
+    APPLE:{
+        series: [60, 10, 30],
+    },
+    AMAZON:{
+        series: [60, 10, 30],
+    },
+    ALPHABET:{
+        series: [60, 10, 30],
+    },
+    FACEBOOK:{
+        series: [30, 10, 60],
+    },
+    INTEL:{
+        series: [60, 10, 30],
+    },
+    ADOBE:{
+        series: [90, 10, 0],
+    },
+    NETFLIX:{
+        series: [60, 10, 30],
+    },
+}
