@@ -24,7 +24,7 @@ export default function Mid(){
 				<div>		
 					<i class="ion-ios-play-outline">➡️</i>	
 					<div class="curl"></div>
-					<Link to="cardbse"></Link>
+					<Link to="login"></Link>
 				</div>				
 			</figure>
 			<figure class="snip0023">

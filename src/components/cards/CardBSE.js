@@ -95,7 +95,7 @@ const FlippyStyle = {
               {/* <p className='img-heading'>Tech Mahindra</p> */}
               </FrontSide>
               <BackSide className="back-card">
-                <div className="card-button">3Yr. return</div><br/><br/>
+                {/* <div className="card-button">3Yr. return</div><br/><br/> */}
                 <Link to={{
                     pathname: '/companydetails/TCS',
                     description:'TCS'

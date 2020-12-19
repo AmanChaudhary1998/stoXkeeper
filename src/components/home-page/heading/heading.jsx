@@ -3,6 +3,7 @@ import Typical from 'react-typical';
 import './heading.css';
 
 import graphs from "../../../images/graphs.gif";
+import { NavLink } from "react-router-dom";
 // import Typo from "./Typo";
 class Heading extends React.Component {
     render () {
@@ -15,7 +16,9 @@ class Heading extends React.Component {
               <h3 className="tagline">The X factor in your Trade</h3>
               {/* <p className="head-para">Modern investing tools and data for everyone.</p> */}
               <div> 
+                <NavLink to="/login">
                 <button class="explore">Start Today!</button>
+                </NavLink>
               </div>
             </div>
             {/* <Typo /> */}

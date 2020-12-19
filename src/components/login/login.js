@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './login.styles.css';
 
@@ -63,7 +64,7 @@ class Login extends Component {
 			<>
 				<div className="container" id="container">
 					<div className="form-container sign-up-container">
-						<form className="login_form" action="#" method="POST">
+						<form className="login_form" action="/" >
 							<h1 className="login-h1">Create Account</h1>
 							<div className="social-container">
 								<input type="text" name="name" placeholder="Name" required />
@@ -77,13 +78,13 @@ class Login extends Component {
 						</form>
 					</div>
 					<div className="form-container sign-in-container">
-						<form className="login_form" action="#" method="POST">
+						<form className="login_form" action="/">
 							<h1 className="login-h1">Sign in</h1>
 							<div class="social-container">
 							</div>
 							<input type="email" name="email" placeholder="Email" />
 							<input type="password" name="password" placeholder="Password" />
-							<a className="login_a" href="#">Forgot your password?</a>
+							<NavLink className="login_a" to="#">Forgot your password?</NavLink>
 							<button className="login_button" type="submit">Sign In</button>
 						</form>
 					</div>
